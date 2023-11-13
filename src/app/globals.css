@@ -1,9 +1,19 @@
-/* :root {
-  
-} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --mainColor: #89216b;
+  --whiteColor: #fff;
+  --titleColor: #555;
+  --labelColor: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
