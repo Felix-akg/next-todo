@@ -5,16 +5,20 @@ const SignIn = () => {
   return (
     <div className={`${styles.form_container} ${styles.sign_in}`}>
       <form action="#">
-        <h2>Sign In</h2>
+        <h2 className={styles.title}>Sign In</h2>
         <div className={styles.form_group}>
           <input type="text" required />
-          <FaUser />
-          <label htmlFor="">username</label>
+          <span className={styles.icon}>
+            <FaUser />
+          </span>
+          <label htmlFor="username">username</label>
         </div>
         <div className={styles.form_group}>
           <input type="password" required />
-          <FaLock />
-          <label htmlFor="">password</label>
+          <span className={styles.icon}>
+            <FaLock />
+          </span>
+          <label htmlFor="password">password</label>
         </div>
         <div className={styles.forgot_pass}>
           <a href="#">forgot password</a>

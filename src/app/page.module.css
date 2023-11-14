@@ -1,0 +1,8 @@
+.main {
+  background: linear-gradient(to right, #da4453, var(--mainColor));
+  font-weight: 400;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}

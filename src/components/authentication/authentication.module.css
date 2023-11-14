@@ -1,0 +1,11 @@
+.wrapper {
+  position: relative;
+  width: 35rem;
+  height: 50rem;
+}
+
+@media (min-width: 540px) {
+  .wrapper {
+    width: 40rem;
+  }
+}
