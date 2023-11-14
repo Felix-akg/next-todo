@@ -39,6 +39,9 @@
 }
 
 .form_group .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0.5rem;
 }
 
@@ -66,4 +69,111 @@
   top: 0 !important;
   font-size: 1.2rem !important;
   background-color: var(--whiteColor);
+}
+
+.forgot_pass {
+  margin: -1.5rem 0 1.5rem 0;
+}
+
+.forgot_pass a {
+  color: var(--labelColor);
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.forgot_pass a:hover {
+  color: var(--mainColor);
+}
+
+.btn {
+  background: linear-gradient(to right, #da4453, var(--mainColor));
+  color: var(--whiteColor);
+  text-transform: capitalize;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.link {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--labelColor);
+  margin: 2.5rem 0;
+}
+
+.link span {
+  text-transform: capitalize;
+  color: var(--mainColor);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.link span:hover {
+  color: #da4453;
+}
+
+.sign_up {
+  transform: rotate(7deg);
+}
+
+.animated_signin .sign_in {
+  animation: signin-flip 1s ease-in-out forwards;
+}
+
+@keyframes signin-flip {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) rotate(7deg) scale(1);
+  }
+}
+
+.animated_signin .sign_up {
+  animation: rotate-card 1s ease-in-out forwards;
+}
+
+.animated_signup .sign_up {
+  animation: signup-flip 1s ease-in-out forwards;
+}
+
+@keyframes signup-flip {
+  0% {
+    transform: translateX(0);
+    z-index: 1;
+  }
+  50% {
+    transform: translateX(40rem) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) rotate(7deg) scale(1);
+  }
+}
+
+.animated_signup .sign_in {
+  transform: rotate(7deg);
+  animation: rotate-card 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes rotate-card {
+  0% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0);
+    z-index: 1;
+  }
 }
